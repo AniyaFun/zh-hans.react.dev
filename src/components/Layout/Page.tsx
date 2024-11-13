@@ -6,7 +6,6 @@ import {Suspense} from 'react';
 import * as React from 'react';
 import {useRouter} from 'next/router';
 import {SidebarNav} from './SidebarNav';
-import {Footer} from './Footer';
 import {Toc} from './Toc';
 // import SocialBanner from '../SocialBanner';
 import {DocsPageFooter} from 'components/DocsFooter';

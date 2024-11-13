@@ -17,5 +17,6 @@
         "parser": "mdx"
       }
     }
-  ]
+  ],
+  "endOfLine": "auto"
 }

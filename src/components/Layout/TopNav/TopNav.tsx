@@ -319,22 +319,7 @@ export default function TopNav({
               </button>
             </div>
             <div className="text-base justify-center items-center gap-1.5 flex 3xl:flex-1 flex-row 3xl:justify-end">
-              <div className="mx-2.5 gap-1.5 hidden lg:flex">
-                <NavItem isActive={section === 'learn'} url="/learn">
-                  教程
-                </NavItem>
-                <NavItem
-                  isActive={section === 'reference'}
-                  url="/reference/react">
-                  参考
-                </NavItem>
-                <NavItem isActive={section === 'community'} url="/community">
-                  社区
-                </NavItem>
-                <NavItem isActive={section === 'blog'} url="/blog">
-                  博客
-                </NavItem>
-              </div>
+              <div className="mx-2.5 gap-1.5 hidden lg:flex"></div>
               <div className="flex w-full md:hidden"></div>
               <div className="flex items-center -space-x-2.5 xs:space-x-0 ">
                 <div className="flex md:hidden">
@@ -376,16 +361,7 @@ export default function TopNav({
                     {languageIcon}
                   </Link>
                 </div>
-                <div className="flex">
-                  <Link
-                    href="https://github.com/facebook/react/releases"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="Open on GitHub"
-                    className="flex items-center justify-center w-12 h-12 transition-transform rounded-full active:scale-95 hover:bg-primary/5 hover:dark:bg-primary-dark/5 outline-link">
-                    {githubIcon}
-                  </Link>
-                </div>
+                <div className="flex"></div>
               </div>
             </div>
           </div>

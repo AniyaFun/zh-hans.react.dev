@@ -181,9 +181,7 @@ export function Page({
                 className={cn(
                   'py-12 px-5 sm:px-12 md:px-12 sm:py-12 md:py-16 lg:py-14',
                   isHomePage && 'lg:pt-0'
-                )}>
-                <Footer />
-              </div>
+                )}></div>
             </div>
           </main>
         </Suspense>

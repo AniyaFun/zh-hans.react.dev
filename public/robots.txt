@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://react.letsdev.cn
+
+# Sitemaps
+Sitemap: https://react.letsdev.cn/sitemap.xml

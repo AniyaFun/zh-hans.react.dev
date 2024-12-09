@@ -181,6 +181,15 @@ export function Page({
                   'py-12 px-5 sm:px-12 md:px-12 sm:py-12 md:py-16 lg:py-14',
                   isHomePage && 'lg:pt-0'
                 )}></div>
+
+              <div className="text-center">
+                <a
+                  href="http://www.miit.gov.cn/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  鲁ICP备2023039018号-2
+                </a>
+              </div>
             </div>
           </main>
         </Suspense>

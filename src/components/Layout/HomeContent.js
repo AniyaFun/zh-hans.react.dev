@@ -504,6 +504,14 @@ export function HomeContent() {
             </ButtonLink>
           </div>
         </Section>
+        <div className="text-center">
+          <a
+            href="http://www.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer">
+            鲁ICP备2023039018号-2
+          </a>
+        </div>
       </div>
     </>
   );

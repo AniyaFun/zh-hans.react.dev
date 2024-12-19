@@ -5,7 +5,6 @@
 import * as React from 'react';
 import Head from 'next/head';
 import {withRouter, Router} from 'next/router';
-import {finishedTranslations} from 'utils/finishedTranslations';
 
 export interface SeoProps {
   title: string;

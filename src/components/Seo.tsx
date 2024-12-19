@@ -61,14 +61,6 @@ export const Seo = withRouter(
           href={canonicalUrl.replace(siteDomain, getDomain())}
           hrefLang="x-default"
         />
-        {finishedTranslations.map((languageCode) => (
-          <link
-            key={'alt-' + languageCode}
-            rel="alternate"
-            hrefLang={languageCode}
-            href={canonicalUrl.replace(siteDomain, getDomain())}
-          />
-        ))}
         <meta property="fb:app_id" content="623268441017527" />
         <meta property="og:type" key="og:type" content="website" />
         <meta property="og:url" key="og:url" content={canonicalUrl} />

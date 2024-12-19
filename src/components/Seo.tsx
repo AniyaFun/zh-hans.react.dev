@@ -5,7 +5,6 @@
 import * as React from 'react';
 import Head from 'next/head';
 import {withRouter, Router} from 'next/router';
-import {siteConfig} from '../siteConfig';
 import {finishedTranslations} from 'utils/finishedTranslations';
 
 export interface SeoProps {
@@ -22,9 +21,8 @@ export interface SeoProps {
 // If you are a maintainer of a language fork,
 // deployedTranslations has been moved to src/utils/finishedTranslations.ts.
 
-function getDomain(languageCode: string): string {
-  const subdomain = languageCode === 'en' ? '' : languageCode + '.';
-  return subdomain + 'react.dev';
+function getDomain(): string {
+  return 'react.letsdev.cn';
 }
 
 export const Seo = withRouter(
@@ -37,7 +35,7 @@ export const Seo = withRouter(
     isHomePage,
     searchOrder,
   }: SeoProps & {router: Router}) => {
-    const siteDomain = getDomain(siteConfig.languageCode);
+    const siteDomain = getDomain();
     const canonicalUrl = `https://${siteDomain}${
       router.asPath.split(/[\?\#]/)[0]
     }`;
@@ -60,7 +58,7 @@ export const Seo = withRouter(
         <link rel="canonical" href={canonicalUrl} />
         <link
           rel="alternate"
-          href={canonicalUrl.replace(siteDomain, getDomain('en'))}
+          href={canonicalUrl.replace(siteDomain, getDomain())}
           hrefLang="x-default"
         />
         {finishedTranslations.map((languageCode) => (
@@ -68,7 +66,7 @@ export const Seo = withRouter(
             key={'alt-' + languageCode}
             rel="alternate"
             hrefLang={languageCode}
-            href={canonicalUrl.replace(siteDomain, getDomain(languageCode))}
+            href={canonicalUrl.replace(siteDomain, getDomain())}
           />
         ))}
         <meta property="fb:app_id" content="623268441017527" />

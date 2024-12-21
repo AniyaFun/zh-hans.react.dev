@@ -54,12 +54,6 @@ export const Seo = withRouter(
           // Let Google figure out a good description for each page.
           <meta name="description" key="description" content={description} />
         )}
-        <link rel="canonical" href={canonicalUrl} />
-        <link
-          rel="alternate"
-          href={canonicalUrl.replace(siteDomain, getDomain())}
-          hrefLang="x-default"
-        />
         <meta property="fb:app_id" content="623268441017527" />
         <meta property="og:type" key="og:type" content="website" />
         <meta property="og:url" key="og:url" content={canonicalUrl} />
